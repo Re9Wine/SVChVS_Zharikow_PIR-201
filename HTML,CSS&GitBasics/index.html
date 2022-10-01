@@ -2,61 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/index.css">
     <title>CV</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#info">Contact Info</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Work Experience</a></li>
-                <li><a href="#english">English level</a></li>
-                <li><a href="#code">Code</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="nav-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#info">Contact Info</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work Experience</a></li>
+                        <li><a href="#english">English level</a></li>
+                        <li><a href="#code">Code</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+        </div>
     </header>
     <main>
-        <img src="Images/photo.jpg">
-        <h1>Nikita Zharikow</h1>
-        <p>
-            I'm studying to be a programmer, quite hardworking, if I got down to business,
-            I can't be torn off from it. I want to study the C# programming language in detail
-            and master other programming languages, after graduation I want to get a job in an
-            IT company. I mainly write back-end code, as this is an interesting environment for me.
-        </p>
-        <div id="info">
-            <h2>Contacts Info</h2>
-            <ul>
-                <li>Cell: +375298416177</li>
-                <li>Email: asckortan@gmail.com</li>
-                <li>Telegram: <a href="https://t.me/nikita_zharikow">r0nar</a></li>
-                <li>VK: <a href="https://vk.com/just.zhar">Nikita Zharikow</a></li>
-            </ul>
+        <div class="container">
+            <div class="main-info">
+                <img src="Images/photo.jpg">
+                <h1>Nikita Zharikow</h1>
+                <p>
+                    I'm studying to be a programmer, quite hardworking, if I got down to business,
+                    I can't be torn off from it. I want to study the C# programming language in detail
+                    and master other programming languages, after graduation I want to get a job in an
+                    IT company. I mainly write back-end code, as this is an interesting environment for me.
+                </p>
+            </div>
+            <hr>
         </div>
-        <div id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>C# (.Net, .Net Core)</li>
-                <li>Java</li>
-                <li>MSSQL</li>
-                <li>React (v16)</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+        <div class="container">
+            <div id="info">
+                <h2>Contacts Info</h2>
+                <ul>
+                    <li>Cell: +375298416177</li>
+                    <li>Email: asckortan@gmail.com</li>
+                    <li>Telegram: <a href="https://t.me/nikita_zharikow">r0nar</a></li>
+                    <li>VK: <a href="https://vk.com/just.zhar">Nikita Zharikow</a></li>
+                </ul>
+            </div>
+            <hr>
         </div>
-        <div id="work">
-            <h2>Work Experience</h2>
-            <a href="https://github.com/Re9Wine/SVChVS_Zharikow_PIR-201"><b>CV</b></a>
+        <div class="container">
+            <div id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C# (.Net, .Net Core)</li>
+                    <li>Java</li>
+                    <li>MSSQL</li>
+                    <li>React (v16)</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <hr>
         </div>
-        <div id="english">
-            <h2>English Level</h2>
-            <i>Pre-Intermediate (A2)</i>
+        <div class="container">
+            <div id="work">
+                <h2>Work Experience</h2>
+                <a href="https://github.com/Re9Wine/SVChVS_Zharikow_PIR-201"><b>CV</b></a>
+            </div>
+            <hr>
         </div>
-        <div id="code">
-            <h2>Code</h2>
-            <pre>
-                <code>
+        <div class="container">
+            <div id="english">
+                <h2>English Level</h2>
+                <i>Pre-Intermediate (A2)</i>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div id="code">
+                <h2>Code</h2>
+                <pre>
+                    <code>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,18 +95,7 @@ using ExcelDataParser.Interfac
 namespace ExcelDataParser
 {
     public partial class ChoiceForm : Form
-    {
-        private string formText;
-        private string[] listBoxItems;
-        private string errorMessage;
-        private IValidator validat                
-        public ChoiceForm(string[] listBoxItems, string formText, string errorMessage, IValidator validator)
-        {
-            InitializeComponent                
-            this.listBoxItems = listBoxItems;
-            this.formText = formText;
-            this.errorMessage = errorMessage;
-            this.validator = validator;                            
+    {                           
         public string GetSelectedItem()
         {
             return checkedListBox1.CheckedItems[0].ToString();                            
@@ -99,10 +112,7 @@ namespace ExcelDataParser
                     throw new Exception(errorMessage);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, ErrorMessage.Caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }                            
+        }                           
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (validator.IsPositive(checkedListBox1.CheckedItems.Count))
@@ -119,12 +129,16 @@ namespace ExcelDataParser
         }
     }
 }
-                </code>
-            </pre>
+                    </code>
+                </pre>
+            </div>
+            <hr>
         </div>
     </main>
     <footer>
-        <p><a href="https://github.com/Re9Wine">https://github.com/Re9Wine</a><br/>2022</p>
+        <div class="container">
+            <p><a href="https://github.com/Re9Wine">https://github.com/Re9Wine</a><br/>2022</p>
+        </div>
     </footer>
 </body>
 </html>
