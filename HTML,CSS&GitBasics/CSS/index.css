@@ -1,0 +1,50 @@
+.container{
+    margin: auto;
+    max-width: 600px;
+}
+
+header{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.nav-menu{
+    text-align: center;
+}
+
+.nav-menu ul{
+    padding: 0 0;
+}
+
+.nav-menu li{
+    font-size: 1.15em;
+    display: inline;
+    padding-right: 10px;
+}
+
+.nav-menu a{
+    color: #0eccc6;
+}
+
+.nav-menu a:hover{
+    color: #0ba39e;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-info img{
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+}
+
+body{
+    font-family: Gadugi;
+    font-size: 1.03em;
+}
+
+footer{
+    text-align: center;
+}
