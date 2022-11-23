@@ -537,7 +537,7 @@ header button:active{
     opacity: 0.7;
 }
 
-#read-more{
+.read-more{
     position: relative;
     width: auto;
     height: 27px;
@@ -552,7 +552,7 @@ header button:active{
     cursor: pointer;
 }
 
-#read-more:hover{
+.read-more:hover{
     opacity: 0.7;
 }
 
