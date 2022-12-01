@@ -199,7 +199,7 @@ header button:active{
     height: 26px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 21.4632px;
     line-height: 26px;
     color: #03101A;
@@ -207,34 +207,30 @@ header button:active{
 
 .logo_1{
     position: absolute;
-    width: 243.95px;
-    height: 56.51px;
     left: 0.38px;
     top: 70.49px;
+    opacity: 0.75;
 }
 
 .logo_2{
     position: absolute;
-    width: 195.46px;
-    height: 44.54px;
     left: 357.38px;
-    top: 76.67px;
+    top: 76px;
+    opacity: 0.75;
 }
 
 .logo_3{
     position: absolute;
-    width: 171.59px;
-    height: 47.97px;
     left: 665.38px;
     top: 74.22px;
+    opacity: 0.75;
 }
 
 .logo_4{
     position: absolute;
-    width: 188px;
-    height: 51.4px;
     left: 949.38px;
     top: 73px;
+    opacity: 0.75;
 }
 
 .main-features{
