@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+  }
+  
+  body {
+    background: #e5e5e5;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 50px auto 0 auto;
+  }
+  
+  .text {
+    height: 25vh;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 1%;
+    resize: none;
+  }
+  
+  .info {
+    margin: 0 auto;
+  }
+  
+  .keyboard {
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    user-select: none;
+  }
+  
+  .keyboard__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .keyboard__key {
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s;
+  }
+  
+  .keyboard__key.active {
+    background: rgba(48, 48, 48, 0.2);
+    border-radius: 15px;
+    box-shadow: none;
+  }
+  
+  .keyboard__key:active {
+    border-radius: 15px;
+    box-shadow: none;
+  }
+  
+  .keyboard__key:hover {
+    background: rgba(48, 48, 48, 0.2);
+  }
+  
+  .keyboard__key_wide {
+    width: 70px;
+  }
+  
+  .keyboard__key_extra-wide {
+    width: 100px;
+  }
+  
+  .keyboard__key_ultra-wide {
+    width: 250px;
+  }
