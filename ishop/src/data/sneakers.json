@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Zig Kinetica II, Reebok",
+        "cost": 392,
+        "photo": "/images/sneakers/Zig-Kinetica-II-Reebok.jpg",
+        "count": 10
+    },
+    {
+        "id": 2,
+        "name": "Nike React Infinity Run Flyknit Men's Running",
+        "cost": 206,
+        "photo": "/images/sneakers/Nike-React-Infinity-Run-Flyknit-Men's-Running.jpg",
+        "count": 15
+    },
+    {
+        "id": 3,
+        "name": "Adidas Pureboost",
+        "cost": 160,
+        "photo": "/images/sneakers/Adidas-Pureboost.jpg",
+        "count": 7
+    },
+    {
+        "id": 4,
+        "name": "Under Armour UA Hovr Phantom 2 Inknt",
+        "cost": 179,
+        "photo": "/images/sneakers/Under-Armour-UA-Hovr-Phantom-2-Inknt.jpg",
+        "count": 17
+    }
+]

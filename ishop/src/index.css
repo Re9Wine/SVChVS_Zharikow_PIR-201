@@ -1,13 +1,365 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  background: #edc147;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+
+  margin: 80px auto;
+  max-width: 1300px;
+  min-height: 100%;
+
+  background: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.wrapper button{
+  display: block;
+  width: 110px;
+  height: inherit;
+  margin: 0 auto;
+  padding: 5px 30px;
+
+  border: none;
+  border-radius:15px;
+  background: #419152;
+
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.wrapper button:hover{
+  background: #0ddb8f;
+}
+
+.wrapper button:active{
+  background: #59be6e;
+}
+
+.ishop-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  width: auto;
+  padding: 5px 30px;
+  height: 50px;
+
+  border-bottom: 1px #c9c5b7 solid;
+}
+
+.ishop-header-logo{
+  width: 50px;
+  height: 50px;
+}
+
+.ishop-header-logo img{
+  width: 100%;
+  height: 100%;
+}
+
+.ishop-header h1{
+  line-height: 50px;
+  margin-left: 30px;
+  margin-right: 50px;
+  font-size: 1.5em;
+}
+
+.ishop-header p{
+  line-height: 50px;
+  font-size: 1.2em;
+}
+
+.ishop-catalog{
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: auto;
+  padding: 10px;
+}
+
+.sneaker-card{
+  display: flex;
+  flex-direction: column;
+
+  margin: 5px;
+  padding: 10px;
+  width: 290px;
+  height: 430px;
+
+  background: #f0f5f3;
+  border-radius: 20px;
+}
+
+.sneaker-card-active{
+  background: #cccdc9;
+}
+
+.sneaker-card-photo {
+  margin: 0 auto;
+  width: 290px;
+  height: 250px;
+}
+
+.sneaker-card-photo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.sneaker-card h2{
+  margin-top: 10px;
+  margin-bottom: auto;
+
+  text-align: center;
+  font-size: 19px;
+}
+
+.sneaker-card p{
+  margin-bottom: 5px;
+  
+  text-align: center;
+  font-size: 17px;
+}
+
+.sneaker-card-buttons{
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 10px;
+  width: inherit;
+  height: 40px;
+}
+
+.ishop-footer{
+  width: inherit;
+  height: auto;
+
+  border-top: 1px #c9c5b7 solid;
+}
+
+.ishop-footer button{
+  display: block;
+  height: 40px;
+  width: 100px;
+  margin: 5px auto;
+}
+
+.add-sneaker-form{
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  height: auto;
+  padding: 5px 0;
+
+  border-bottom: 1px #c9c5b7 solid;
+}
+
+.add-sneaker-form-active{
+  display: flex;
+  pointer-events: all;
+}
+
+.sneaker-card-undisplay{
+  display: none;
+}
+
+.add-sneaker-form p{
+  margin-top: 5px;
+
+  text-align: center;
+  font-size: 15px;
+  color: red;
+}
+
+input{
+  border: none;
+  resize: none;
+  outline: none;
+  line-height: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-sneaker-form input{
+  width: 110px;
+  height: 30px;
+  padding: 5px 15px;
+
+  background: #d7e0dd;
+  border-radius: 15px;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.add-sneaker-form input:focus{
+  background: #bbc7c3;
+}
+
+.input-name, .input-photo{
+  width: 200px !important;
+}
+
+.input-submit{
+  height: 40px !important;
+  width: 100px !important;
+  padding: 5px 30px !important;
+
+  border: none;
+  border-radius:15px;
+  background: #419152 !important;
+  line-height: 32px !important;
+
+  color: white;
+  font-size: 17px !important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-submit:hover{
+  background: #0ddb8f !important;
+}
+
+.input-submit:active{
+  background: #59be6e !important;
+}
+.input-cancel{
+  display: block;
+  height: 40px !important;
+  padding: 5px 30px !important;
+  line-height: 32px !important;
+
+  border: none;
+  background: #419152 !important;
+  border-radius: 15px;
+
+  color: white;
+  font-size: 17px !important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-cancel:hover{
+  background: #0ddb8f !important;
+}
+
+.input-cancel:active{
+  background: #59be6e !important;
+}
+
+.delete-sneaker-form{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: inherit;
+  height: 100px;
+}
+
+.delete-sneaker-form-active{
+  display: flex;
+  pointer-events: all;
+}
+
+.delete-sneaker-form form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: inherit;
+}
+
+.delete-sneaker-form input{
+  display: block;
+  width: 110px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 5px 30px;
+
+  border: none;
+  border-radius:15px;
+  background: #419152;
+
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-sneaker-form input:hover{
+  background: #0ddb8f !important;
+}
+
+.delete-sneaker-form input:active{
+  background: #59be6e !important;
+}
+
+.edit-sneaker-form input{
+  width: 110px;
+  height: 30px;
+  padding: 5px 15px;
+
+  background: #acb8b3;
+  border-radius: 15px;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.edit-sneaker-form input:focus{
+  background: #929b98 !important;
+}
+
+.edit-sneaker-form{
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 5px;
+  padding: 10px;
+  width: 290px;
+  height: 430px;
+
+  background: #cccdc9;
+  border-radius: 20px;
+
+  pointer-events: all;
+}
+
+.edit-sneaker-form-active{
+  display: flex;
+}
+
+.edit-sneaker-form p{
+  color: red;
 }
