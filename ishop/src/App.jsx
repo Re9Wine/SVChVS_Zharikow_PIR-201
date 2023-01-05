@@ -1,19 +1,21 @@
-import React, { useState } from "react";
-import { Catalog } from "./components/Catalog";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import sneakers from "./data/sneakers.json";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { BlogPage } from "./pages/BlogPage";
+import { AboutPage } from "./pages/AboutPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 const App = () =>{
-    const [sneakersData, setSneakersData] = useState(sneakers);
-
     return (
-        <main className="wrapper">
-          <Header />
-          <Catalog sneakersData={sneakersData} setSneakersData={setSneakersData} />
-          <Footer sneakersData={sneakersData} setSneakersData={setSneakersData} />
-        </main>
-      );
+      <main className="wrapper">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+    );
 }
 
 export default App;
