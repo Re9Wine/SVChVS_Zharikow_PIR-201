@@ -1,0 +1,15 @@
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.csproj.AssemblyReference.cache
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.AssemblyInfoInputs.cache
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.AssemblyInfo.cs
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.csproj.CoreCompileInputs.cache
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\bin\Debug\net5.0\ishop.DAL.deps.json
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\bin\Debug\net5.0\ishop.DAL.dll
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\bin\Debug\net5.0\ref\ishop.DAL.dll
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\bin\Debug\net5.0\ishop.DAL.pdb
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\bin\Debug\net5.0\ishop.Domain.dll
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\bin\Debug\net5.0\ishop.Domain.pdb
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.csproj.CopyComplete
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.dll
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ref\ishop.DAL.dll
+D:\Study\Term 5\CВЧСВ\Labs\SVChVS_Zharikow_PIR-201\ishop\ishop.DAL\obj\Debug\net5.0\ishop.DAL.pdb
